@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Col, Row, Container, Card } from "react-bootstrap";
-import { Radio, Space } from "antd";
+import { Radio, Space, Divider } from "antd";
 import "./Loginpage.css";
 import EmployerLogin from "./EmployerLogin";
 import AdminLogin from  "./AdminLogin";
