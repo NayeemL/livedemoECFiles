@@ -1,0 +1,14 @@
+/* .subheader-null-style{
+    border: none;
+} */
+
+.subheader-style{
+    border-bottom: 1px solid gray !important;
+    display: flex;
+    align-items: center;
+}
+
+/* .terms-style{
+    padding-top: 150px;
+    height: 100vh;
+} */
