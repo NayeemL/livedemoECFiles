@@ -24,7 +24,6 @@ function AdminLogin() {
   const {
     register,
     handleSubmit,
-    control,
     formState: { errors },
     getValues,
   } = useForm();
@@ -74,14 +73,6 @@ function AdminLogin() {
           message: err?.response.data?.message,
         });
       });
-  };
-
-  const getFormErrorMessage = (name) => {
-    return errors[name] ? (
-      <small className="p-error">{errors[name].message}</small>
-    ) : (
-      <small className="p-error">&nbsp;</small>
-    );
   };
 
   return (
