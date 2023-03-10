@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Chart } from "primereact/chart";
-import { Card } from "primereact/card";
 
 const PieChartDemo = () => {
   const [chartData] = useState({

@@ -13,14 +13,14 @@ import Api from "../../Api";
 
 function AddUserForm() {
   const navigate = useNavigate();
-  const [customer, setCustomer] = useState([]);
+  // const [customer, setCustomer] = useState([]);
 
-  const [resres, setResres] = useState({
+  const [setResres] = useState({
     status: null,
     message: null,
   });
 
-  const [details, setDetails] = useState("");
+  const [setDetails] = useState("");
 
   const defaultValues = {
     username: "",

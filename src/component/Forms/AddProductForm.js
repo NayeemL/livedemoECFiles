@@ -15,7 +15,6 @@ function AddProductForm() {
     handleSubmit,
     control,
     getValues,
-    register,
     reset,
     formState: { errors },
   } = useForm({

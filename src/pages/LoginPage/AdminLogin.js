@@ -50,7 +50,7 @@ function AdminLogin() {
       .then((response) => {
         setResres({
           status: response.data?.status,
-          message: response.data?.toast.success("Admin Login Successfully!"),
+          message: response.data?.message,
         });
         if (response.data.token) {
           const token = response.data.token;
