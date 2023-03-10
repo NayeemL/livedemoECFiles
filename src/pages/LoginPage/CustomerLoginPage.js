@@ -50,7 +50,7 @@ function CustomerLoginPage() {
         .then((response) => {
           setResres({
             status: response.data?.status,
-            message: response.data?.message,
+            message: response.data?.toast.success("User Login Successfully!"),
           });
           if (response.data.token) {
             const token = response.data.token;

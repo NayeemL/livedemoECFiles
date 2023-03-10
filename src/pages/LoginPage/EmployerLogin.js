@@ -2,7 +2,6 @@ import React, { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye, faEyeSlash } from "@fortawesome/free-solid-svg-icons";
-import HeaderNavbar from "../../component/HeaderNavBar/HeaderNavBar2";
 import "./Loginpage.css";
 import { Button, Toast, ToastContainer } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
@@ -25,7 +24,6 @@ function EmployerLogin() {
   const {
     register,
     handleSubmit,
-    control,
     formState: { errors },
     getValues,
   } = useForm();
@@ -52,7 +50,7 @@ function EmployerLogin() {
       .then((response) => {
         setRes({
           status: response.data?.status,
-          message: response.data?.message,
+          message: response.data?.toast.success("Admin Login Successfully!"),
         });
         if (response.data.token) {
           const token = response.data.token;
