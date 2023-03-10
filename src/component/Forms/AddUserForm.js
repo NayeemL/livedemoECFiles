@@ -66,13 +66,13 @@ function AddUserForm() {
       .then((resp) => {
         setResres({
           status: resp.data?.status,
-          message: resp.data?.toast.success("User Created Successfully!"),
+          message: toast.success("user Created Successfully!"),
         });
         localStorage.setItem("userId", resp.data.data._id);
+        reset();
         setTimeout(() => {
           navigate("/");
         }, 10000);
-        reset();
       })
       .catch((err) => {
         setResres({
